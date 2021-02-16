@@ -13,7 +13,7 @@ $pushID = 'U25947640ddd7aa4b7d31900a382e0ba3';
 $httpClient = new \LINE\LINEBot\HTTPClient\CurlHTTPClient($access_token);
 $bot = new \LINE\LINEBot($httpClient, ['channelSecret' => $channelSecret]);
 
-$textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder('หงส์หำน้อย');
+$textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder('ยินดีด้วยคุณได้รับเงินฟรี');
 $response = $bot->pushMessage($pushID, $textMessageBuilder);
 
 echo $response->getHTTPStatus() . ' ' . $response->getRawBody();
